@@ -1,4 +1,4 @@
-package oo.atividade_nota;
+package prova;
 
 public class Tecido {
     private String nome;
@@ -43,5 +43,22 @@ public class Tecido {
     public void setCor(String cor){
         this.cor = cor;
     }
+    
+    public void setCor(String novaCor, boolean colecaoNova) {
+        if (colecaoNova) {
+            this.cor = "Nova " = novaCor;
+        } else {
+            this.cor = novaCor; 
+        }
+    }
 
-}
+    public boolean queimaEstoque() {
+        if(this.cor.contains("Nova")){
+            this.valor = this.valor - 50.00;
+            return true;
+        }else{
+            return false;
+        }
+    }
+    }
+
